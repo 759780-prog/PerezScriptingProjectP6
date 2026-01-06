@@ -1,26 +1,26 @@
+    using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-using System.Collections;
 
-public class ScopeAndAccessModifiers : MonoBehaviour
+public class ScopeAndAccess : MonoBehaviour
 {
     public int alpha = 5;
 
-
     private int beta = 0;
-    private int gamma = 5;
-
+    private int gama = 5;
 
     private AnotherClass myOtherClass;
 
-
+    // Start is called before the first frame update
     void Start()
     {
         alpha = 29;
-
         myOtherClass = new AnotherClass();
         myOtherClass.FruitMachine(alpha, myOtherClass.apples);
     }
 
+    // Update is called once per frame
+  
 
     void Example(int pens, int crayons)
     {
@@ -29,8 +29,7 @@ public class ScopeAndAccessModifiers : MonoBehaviour
         Debug.Log(answer);
     }
 
-
-    void Update()
+    void Update ()
     {
         Debug.Log("Alpha is set to: " + alpha);
     }
